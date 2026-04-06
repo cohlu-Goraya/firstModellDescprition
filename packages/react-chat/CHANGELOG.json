@@ -1,0 +1,296 @@
+{
+  "name": "@fluentui-contrib/react-chat",
+  "entries": [
+    {
+      "date": "Tue, 03 Mar 2026 14:35:51 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.2.2",
+      "version": "0.2.2",
+      "comments": {
+        "none": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "45e07a396c42688fb96423bd6a95a442fb8f0f84",
+            "comment": "chore: migrate repo to yarn modern"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Tue, 18 Nov 2025 14:32:44 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.2.2",
+      "version": "0.2.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "1d97697e39a8ce90dc2a2ca1a8938230658178ac",
+            "comment": "chore: bump react-dom versions to support React 19"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 01 Oct 2025 08:00:02 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.2.1",
+      "version": "0.2.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "b028e124e0b76688c5daff7792b8b82b94b2de93",
+            "comment": "chore: update peer dependencies for React and @types/react to support versions <20.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Mon, 22 Sep 2025 16:02:24 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.2.0",
+      "version": "0.2.0",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "f83a0d0a7b961a677ead51442b35c1b3e8183bce",
+            "comment": "feat: add react 19 support"
+          }
+        ],
+        "minor": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "513e54d8c1a60a13d80afaec1bb006ae26492a39",
+            "comment": "feat: enforce explicit module boundary types"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Thu, 10 Apr 2025 14:11:17 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.11",
+      "version": "0.1.11",
+      "comments": {
+        "patch": [
+          {
+            "author": "hochelmartin@gmail.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "dba02ab6b87eef63dda236155ec0330cd56673ec",
+            "comment": "fix: add missing runtime @swc/helper dependency"
+          },
+          {
+            "author": "hochelmartin@gmail.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "02f6d1c4176fb0c9f852b14fb2d2b019ba768edc",
+            "comment": "fix: normalize package dependencies"
+          }
+        ],
+        "none": [
+          {
+            "author": "vgenaev@gmail.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "d0a3792e7ce7c3281e7c4aa7ee2bd7bfe8d8f4f5",
+            "comment": "chore: remove old .eslintrc files"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Mon, 15 Jul 2024 16:29:30 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.10",
+      "version": "0.1.10",
+      "comments": {
+        "patch": [
+          {
+            "author": "lingfangao@hotmail.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "3320ed0ebd37caa3f9a4ba7e2ff32486343b71a3",
+            "comment": "fix: Chat should be able to override tabster attributes"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 23 Feb 2024 12:49:25 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.9",
+      "version": "0.1.9",
+      "comments": {
+        "patch": [
+          {
+            "author": "yuanboxue@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "074ea86756a9543d271167cad8fbbdc17a250a05",
+            "comment": "fix: allow custom tabster attribute on ChatMessage/ChatMyMessage"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 21 Feb 2024 08:44:13 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.8",
+      "version": "0.1.8",
+      "comments": {
+        "patch": [
+          {
+            "author": "yuanboxue@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "0c7e8ce95e66fad823a6704aac59a9698d9fb138",
+            "comment": "chore: use composition hook for Chat"
+          },
+          {
+            "author": "yuanboxue@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "745ac81a45ac72443a5ebb7c72520ba6d8adde0a",
+            "comment": "chore: use new slot api for ChatMessage/ChatMyMessage"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Tue, 06 Feb 2024 09:15:09 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.7",
+      "version": "0.1.7",
+      "comments": {
+        "none": [
+          {
+            "author": "bernardo.sunderhus@gmail.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "e1afa1694054d776bc4c3cb79a5f21754711c22c",
+            "comment": "chore: nx migrate to v17.3"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 25 Oct 2023 09:11:36 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.7",
+      "version": "0.1.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "9e73ce7bdb23f135aa39e4db42f4eba5a5176933",
+            "comment": "fix: fix \"exports.types\" field"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Thu, 06 Jul 2023 12:03:40 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.6",
+      "version": "0.1.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "lingfan.gao@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "13fd3f08be7dd64cfc4d8496fcd87b46f3bc1fc4",
+            "comment": "feat: downgrade to es2019"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 05 Jul 2023 20:20:40 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.5",
+      "version": "0.1.5",
+      "comments": {
+        "none": [
+          {
+            "author": "lingfan.gao@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "beb2f7e06505072c5f442fcf907a1c992fd85bbb",
+            "comment": "chore: Remove node types in tsconfig.lib.json by default"
+          }
+        ],
+        "patch": [
+          {
+            "author": "lingfan.gao@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "7ff9f568e93f903a17b7bf861b2fa114ac144da5",
+            "comment": "fix: Add all dependencies to package.json"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Tue, 04 Jul 2023 11:46:49 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.4",
+      "version": "0.1.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "82e6af159e0a2220a485734aad3a22533cd32023",
+            "comment": "chore: update required version of @fluentui/react-components"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Thu, 01 Jun 2023 16:04:31 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.3",
+      "version": "0.1.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "lingfangao@hotmail.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "12e79c1329380dda00eef70a2f6e5a5b000bc8e7",
+            "comment": "fix: ChatMyMessage should not be truncated"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 19 May 2023 11:02:29 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.2",
+      "version": "0.1.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "lingfangao@hotmail.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "e9a799b6c1905e0002ded1cee9ee2ceb09c1ea1e",
+            "comment": "fix: Add swc helper as depedency"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 19 May 2023 09:03:54 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.1",
+      "version": "0.1.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "lingfangao@hotmail.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "e2c3452033910d04656a058396972299dcdc909e",
+            "comment": "fix: Export components props"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 19 May 2023 08:42:14 GMT",
+      "tag": "@fluentui-contrib/react-chat_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "lingfangao@hotmail.com",
+            "package": "@fluentui-contrib/react-chat",
+            "commit": "a42861fa7865a514bf9a9643533c2e7111ded6d2",
+            "comment": "feat: Initial release of react-chat"
+          }
+        ]
+      }
+    }
+  ]
+}

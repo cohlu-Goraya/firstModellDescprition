@@ -1,0 +1,117 @@
+{
+  "name": "@fluentui-contrib/react-interactive-tab",
+  "entries": [
+    {
+      "date": "Tue, 18 Nov 2025 14:32:44 GMT",
+      "tag": "@fluentui-contrib/react-interactive-tab_v0.2.2",
+      "version": "0.2.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-interactive-tab",
+            "commit": "1d97697e39a8ce90dc2a2ca1a8938230658178ac",
+            "comment": "chore: bump react-dom versions to support React 19"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 01 Oct 2025 08:00:02 GMT",
+      "tag": "@fluentui-contrib/react-interactive-tab_v0.2.1",
+      "version": "0.2.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-interactive-tab",
+            "commit": "b028e124e0b76688c5daff7792b8b82b94b2de93",
+            "comment": "chore: update peer dependencies for React and @types/react to support versions <20.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Mon, 22 Sep 2025 16:02:24 GMT",
+      "tag": "@fluentui-contrib/react-interactive-tab_v0.2.0",
+      "version": "0.2.0",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-interactive-tab",
+            "commit": "f83a0d0a7b961a677ead51442b35c1b3e8183bce",
+            "comment": "feat: add react 19 support"
+          }
+        ],
+        "minor": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-interactive-tab",
+            "commit": "513e54d8c1a60a13d80afaec1bb006ae26492a39",
+            "comment": "feat: enforce explicit module boundary types"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Thu, 10 Apr 2025 14:11:17 GMT",
+      "tag": "@fluentui-contrib/react-interactive-tab_v0.1.2",
+      "version": "0.1.2",
+      "comments": {
+        "none": [
+          {
+            "author": "vgenaev@gmail.com",
+            "package": "@fluentui-contrib/react-interactive-tab",
+            "commit": "d0a3792e7ce7c3281e7c4aa7ee2bd7bfe8d8f4f5",
+            "comment": "chore: remove old .eslintrc files"
+          }
+        ],
+        "patch": [
+          {
+            "author": "hochelmartin@gmail.com",
+            "package": "@fluentui-contrib/react-interactive-tab",
+            "commit": "dba02ab6b87eef63dda236155ec0330cd56673ec",
+            "comment": "fix: bump @swc/helpers to monorepo version"
+          },
+          {
+            "author": "hochelmartin@gmail.com",
+            "package": "@fluentui-contrib/react-interactive-tab",
+            "commit": "02f6d1c4176fb0c9f852b14fb2d2b019ba768edc",
+            "comment": "fix: normalize package dependencies"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 01 Nov 2024 18:43:13 GMT",
+      "tag": "@fluentui-contrib/react-interactive-tab_v0.1.1",
+      "version": "0.1.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "soniaboller@gmail.com",
+            "package": "@fluentui-contrib/react-interactive-tab",
+            "commit": "a781bbcb7a0f15e7f191b3501b15c6e556cea53a",
+            "comment": "refactor: export all types and hooks from barrel file"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 16 Oct 2024 11:04:29 GMT",
+      "tag": "@fluentui-contrib/react-interactive-tab_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "kirpadv@gmail.com",
+            "package": "@fluentui-contrib/react-interactive-tab",
+            "commit": "a7e7aaaa48d1db03b15f8759840ab006933d6cc7",
+            "comment": "feat: prepare initial release"
+          }
+        ]
+      }
+    }
+  ]
+}

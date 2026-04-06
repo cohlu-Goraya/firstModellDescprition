@@ -1,0 +1,15 @@
+{
+  "name": "@fluentui-contrib/react-shadow",
+  "version": "0.1.4",
+  "description": "React components for Shadow DOM",
+  "dependencies": {
+    "@griffel/shadow-dom": "~0.2.0",
+    "@swc/helpers": "~0.5.11",
+    "react-shadow": "^20.3.0"
+  },
+  "peerDependencies": {
+    "@fluentui/react-components": ">=9.70.0 <10.0.0",
+    "@types/react": ">=16.8.0 <20.0.0",
+    "react": ">=16.8.0 <20.0.0"
+  }
+}

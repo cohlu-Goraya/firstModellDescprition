@@ -1,0 +1,174 @@
+{
+  "name": "@fluentui-contrib/react-draggable-dialog",
+  "entries": [
+    {
+      "date": "Tue, 03 Mar 2026 14:35:51 GMT",
+      "tag": "@fluentui-contrib/react-draggable-dialog_v0.2.4",
+      "version": "0.2.4",
+      "comments": {
+        "none": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "45e07a396c42688fb96423bd6a95a442fb8f0f84",
+            "comment": "chore: migrate repo to yarn modern"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Tue, 02 Dec 2025 13:14:00 GMT",
+      "tag": "@fluentui-contrib/react-draggable-dialog_v0.2.4",
+      "version": "0.2.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "marcosvmmoura@gmail.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "360c89e816564f1cd06c804c6afcfe2d38cf20b5",
+            "comment": "fix: improve initial position calculation performance"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Tue, 18 Nov 2025 14:32:44 GMT",
+      "tag": "@fluentui-contrib/react-draggable-dialog_v0.2.3",
+      "version": "0.2.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "1d97697e39a8ce90dc2a2ca1a8938230658178ac",
+            "comment": "chore: bump react-dom versions to support React 19"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Thu, 23 Oct 2025 15:06:11 GMT",
+      "tag": "@fluentui-contrib/react-draggable-dialog_v0.2.2",
+      "version": "0.2.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "marcosvmmoura@gmail.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "f1bd55b3dbd43ca60a823c0c2158258745b97012",
+            "comment": "fix: add comprehensive number of tests"
+          },
+          {
+            "author": "marcosvmmoura@gmail.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "044dbb8d2c098c7d1c4b89279bd00f5ac0ea41ac",
+            "comment": "fix: improve calculation performance after motion upgrade on Dialog"
+          },
+          {
+            "author": "marcosvmmoura@gmail.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "9231a927b53e18ed00dfa4ad6dc112cf26deab64",
+            "comment": "fix: touch events not working when using both Pointer and Touch sensors"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 01 Oct 2025 08:00:02 GMT",
+      "tag": "@fluentui-contrib/react-draggable-dialog_v0.2.1",
+      "version": "0.2.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "b028e124e0b76688c5daff7792b8b82b94b2de93",
+            "comment": "chore: update peer dependencies for React and @types/react to support versions <20.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Mon, 22 Sep 2025 16:02:24 GMT",
+      "tag": "@fluentui-contrib/react-draggable-dialog_v0.2.0",
+      "version": "0.2.0",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "f83a0d0a7b961a677ead51442b35c1b3e8183bce",
+            "comment": "feat: add react 19 support"
+          }
+        ],
+        "minor": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "513e54d8c1a60a13d80afaec1bb006ae26492a39",
+            "comment": "feat: enforce explicit module boundary types"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Thu, 10 Apr 2025 14:11:17 GMT",
+      "tag": "@fluentui-contrib/react-draggable-dialog_v0.1.2",
+      "version": "0.1.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "hochelmartin@gmail.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "02f6d1c4176fb0c9f852b14fb2d2b019ba768edc",
+            "comment": "fix: normalize package dependencies"
+          },
+          {
+            "author": "hochelmartin@gmail.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "dba02ab6b87eef63dda236155ec0330cd56673ec",
+            "comment": "fix: add missing runtime @swc/helper dependency"
+          }
+        ],
+        "none": [
+          {
+            "author": "vgenaev@gmail.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "d0a3792e7ce7c3281e7c4aa7ee2bd7bfe8d8f4f5",
+            "comment": "chore: remove old .eslintrc files"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 21 Jun 2024 06:08:36 GMT",
+      "tag": "@fluentui-contrib/react-draggable-dialog_v0.1.1",
+      "version": "0.1.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "tor.lye@tietoevry.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "58b83358ac4bc6ee7b7478ab6bd60caedc814662",
+            "comment": "Add ref forwarding for DraggableDialogSurface"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 12 Apr 2024 14:30:00 GMT",
+      "tag": "@fluentui-contrib/react-draggable-dialog_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "marcosvmmoura@gmail.com",
+            "package": "@fluentui-contrib/react-draggable-dialog",
+            "commit": "9a165c1647490eee32f9a03dcd291ac2cc46e7bf",
+            "comment": "release: first minor version"
+          }
+        ]
+      }
+    }
+  ]
+}

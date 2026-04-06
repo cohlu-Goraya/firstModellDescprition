@@ -1,0 +1,179 @@
+import * as React from 'react';
+import { ClientRect, useDraggable } from '@dnd-kit/core';
+import { CSS } from '@dnd-kit/utilities';
+import { useFluent, useMergedRefs } from '@fluentui/react-components';
+
+import { assertDialogParent } from '../../utils/assertDialogParent';
+import { useDraggableDialogContext } from '../../contexts/DraggableDialogContext';
+import {
+  DraggableDialogSurfaceProps,
+  DraggableDialogSurfaceState,
+} from './DraggableDialogSurface.types';
+
+/**
+ * Returns the state needed to make a draggable dialog surface.
+ */
+export const useDraggableDialogSurface = (
+  props: DraggableDialogSurfaceProps,
+  forwardedRef: React.ForwardedRef<HTMLDivElement>
+): DraggableDialogSurfaceState => {
+  const { targetDocument } = useFluent();
+  const {
+    id,
+    boundary,
+    margin,
+    hasDraggableParent,
+    hasBeenDragged,
+    position,
+    dropPosition,
+    setDropPosition,
+  } = useDraggableDialogContext();
+  const { setNodeRef, transform, isDragging } = useDraggable({
+    id,
+  });
+  const [currentEl, setCurrentEl] = React.useState<HTMLElement | null>(null);
+
+  const doc = targetDocument?.documentElement;
+  const mountNode =
+    boundary === 'viewport' ? props.mountNode : boundary?.current;
+
+  const ref: React.RefCallback<HTMLDivElement> = React.useCallback(
+    (node) => {
+      if (!node) {
+        return;
+      }
+
+      setNodeRef(node);
+      setCurrentEl(node);
+    },
+    [setNodeRef]
+  );
+
+  const mergedRefs = useMergedRefs(ref, forwardedRef);
+
+  const boundaryRect = React.useMemo<ClientRect | undefined>(() => {
+    if (!boundary || boundary === 'viewport') {
+      if (!doc) {
+        return undefined;
+      }
+
+      return {
+        width: doc.clientWidth - margin.start - margin.end,
+        height: doc.clientHeight - margin.top - margin.bottom,
+        top: margin.top,
+        right: margin.end,
+        bottom: margin.bottom,
+        left: margin.start,
+      };
+    }
+
+    const boundaryEl = boundary.current;
+
+    if (!boundaryEl) {
+      return undefined;
+    }
+
+    return {
+      width: boundaryEl.clientWidth - margin.start - margin.end,
+      height: boundaryEl.clientHeight - margin.top - margin.bottom,
+      top: boundaryEl.offsetTop + margin.top,
+      right: boundaryEl.offsetLeft + boundaryEl.clientWidth - margin.end,
+      bottom: boundaryEl.offsetTop + boundaryEl.clientHeight - margin.bottom,
+      left: boundaryEl.offsetLeft + margin.start,
+    };
+  }, [boundary, doc, margin.start, margin.end, margin.top, margin.bottom]);
+
+  const boundaryCoords = React.useMemo(() => {
+    if (!boundaryRect || !currentEl) {
+      return undefined;
+    }
+
+    const boundaryTopReference = boundaryRect.top + boundaryRect.height / 2;
+    const boundaryLeftReference = boundaryRect.left + boundaryRect.width / 2;
+    const top = boundaryTopReference - Math.ceil(currentEl.clientHeight / 2);
+    const left = boundaryLeftReference - Math.ceil(currentEl.clientWidth / 2);
+
+    return { top, left };
+  }, [boundaryRect, currentEl]);
+
+  const style = React.useMemo(() => {
+    if (!currentEl) {
+      return undefined;
+    }
+
+    // During dragging position.
+    if (isDragging) {
+      const baseStyles = {
+        transform: CSS.Translate.toString(transform),
+        transitionDuration: '0s',
+      };
+
+      if (!hasBeenDragged) {
+        if (position) {
+          return {
+            margin: 0,
+            top: position.y,
+            left: position.x,
+          };
+        }
+
+        return baseStyles;
+      }
+
+      return {
+        ...baseStyles,
+        margin: 0,
+        top: dropPosition.y,
+        left: dropPosition.x,
+      };
+    }
+
+    // Controlled position
+    if (position) {
+      return {
+        margin: 0,
+        top: position.y,
+        left: position.x,
+      };
+    }
+
+    if (!hasBeenDragged && (boundary === 'viewport' || !boundary)) {
+      return undefined;
+    }
+
+    return {
+      margin: 0,
+      top: dropPosition.y,
+      left: dropPosition.x,
+    };
+  }, [
+    currentEl,
+    isDragging,
+    transform,
+    hasBeenDragged,
+    position,
+    dropPosition,
+    boundary,
+  ]);
+
+  React.useEffect(() => {
+    if (!style || 'transform' in style || hasBeenDragged || !boundaryCoords) {
+      return;
+    }
+
+    const source = position ? style : boundaryCoords;
+
+    setDropPosition?.({
+      x: source?.left || 0,
+      y: source?.top || 0,
+    });
+  }, [style, setDropPosition, hasBeenDragged, position, boundaryCoords]);
+
+  assertDialogParent(hasDraggableParent, 'DraggableDialogSurface');
+
+  return {
+    ref: mergedRefs,
+    mountNode,
+    style,
+  };
+};

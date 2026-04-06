@@ -1,0 +1,358 @@
+{
+  "name": "@fluentui-contrib/react-resize-handle",
+  "entries": [
+    {
+      "date": "Fri, 06 Mar 2026 08:46:45 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.8.4",
+      "version": "0.8.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "jirivyhnalek@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "6ae4fc8e774799602c866e7b20b3a431758852ae",
+            "comment": "Fix UX for edge cases"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Tue, 25 Nov 2025 18:02:17 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.8.3",
+      "version": "0.8.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "fealkhou@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "854a544b47a8ebbca0ee82ff9db136efabbb28fc",
+            "comment": "fix: onChangeRejected not called because inaccurate window width results in inaccurate vw unit"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Tue, 18 Nov 2025 14:32:44 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.8.2",
+      "version": "0.8.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "1d97697e39a8ce90dc2a2ca1a8938230658178ac",
+            "comment": "chore: bump react-dom versions to support React 19"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 01 Oct 2025 08:00:02 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.8.1",
+      "version": "0.8.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "b028e124e0b76688c5daff7792b8b82b94b2de93",
+            "comment": "chore: update peer dependencies for React and @types/react to support versions <20.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Mon, 22 Sep 2025 16:02:24 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.8.0",
+      "version": "0.8.0",
+      "comments": {
+        "patch": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "f83a0d0a7b961a677ead51442b35c1b3e8183bce",
+            "comment": "feat: add react 19 support"
+          }
+        ],
+        "minor": [
+          {
+            "author": "dmytrokirpa@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "513e54d8c1a60a13d80afaec1bb006ae26492a39",
+            "comment": "feat: enforce explicit module boundary types"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Mon, 19 May 2025 11:51:48 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.7.1",
+      "version": "0.7.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "80b53fcfd5860462d787b3de5e7f9ac644f8a258",
+            "comment": "feat: add onChangeRejected() callback"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Thu, 15 May 2025 10:13:29 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.7.0",
+      "version": "0.7.0",
+      "comments": {
+        "none": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "7617f68d8c19fe78f2e3d89ab5fa4741c114b76e",
+            "comment": "fix(resize-handle): updates for #375"
+          }
+        ],
+        "minor": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "9ffe042cf4f5f27fc317fa2baabd78ea768d46f0",
+            "comment": "feat:  support viewport units"
+          }
+        ],
+        "patch": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "87988c0c483861cc79448f6e62f54280ac654eb3",
+            "comment": "fix: do not call `onChange` with stale values"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Thu, 10 Apr 2025 14:11:17 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.6.3",
+      "version": "0.6.3",
+      "comments": {
+        "none": [
+          {
+            "author": "vgenaev@gmail.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "d0a3792e7ce7c3281e7c4aa7ee2bd7bfe8d8f4f5",
+            "comment": "chore: remove old .eslintrc files"
+          }
+        ],
+        "patch": [
+          {
+            "author": "hochelmartin@gmail.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "dba02ab6b87eef63dda236155ec0330cd56673ec",
+            "comment": "fix: bump @swc/helpers to monorepo version"
+          },
+          {
+            "author": "hochelmartin@gmail.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "02f6d1c4176fb0c9f852b14fb2d2b019ba768edc",
+            "comment": "fix: normalize package dependencies"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 26 Mar 2025 12:45:02 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.6.2",
+      "version": "0.6.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "bcab4ddb262eb5c684b7c5977c5c568c66529d75",
+            "comment": "fix: update events dispatch order"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 25 Sep 2024 12:26:50 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.6.1",
+      "version": "0.6.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "937e231528a018612b5381c6b5152c3d186935f0",
+            "comment": "feat: add `variableTarget` option"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Thu, 29 Aug 2024 12:00:06 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.6.0",
+      "version": "0.6.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "jirivyhnalek@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "5310457c50e7c72dc685e1ec88a1dd61a9554286",
+            "comment": "Feat: BREAKING - update event callbacks to be more consistent with other Fluent UI components"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 21 Aug 2024 08:45:39 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.5.0",
+      "version": "0.5.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "jirivyhnalek@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "fc505f5d02fb2d907ace9a520da5d73c619525bf",
+            "comment": "feat(react-resize-handle): Use slider role for better screen reader support"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Mon, 19 Aug 2024 11:38:24 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.4.1",
+      "version": "0.4.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "a1201a9b78ea4a6dec722d0468ff49236d7479e8",
+            "comment": "fix(resize-handle): restore to useCallback, add tests"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 16 Aug 2024 08:51:35 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.4.0",
+      "version": "0.4.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "0cbac9c66304e55eae0ad71c373f0d99ba658757",
+            "comment": "**Breaking**: Remove the default \"tabIndex=0\" from the handle attributes"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 14 Aug 2024 14:30:28 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.3.2",
+      "version": "0.3.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "olfedias@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "09e08241a66acc08963abe3425d527e78855672a",
+            "comment": "fix: make ref callback stable"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Mon, 15 Jul 2024 08:56:10 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.3.1",
+      "version": "0.3.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "hochelmartin@gmail.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "ca0a0f201bb7cb77f75052208548e3c8929b5d9d",
+            "comment": "fix: resolve incorrectly build package structure"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 10 Jul 2024 12:57:30 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.3.0",
+      "version": "0.3.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "jirivyhnalek@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "b7ef7cd2c93eb600de46aef6d9deeffc3563343b",
+            "comment": "feat(react-resize-handle): Allow relative panel adjustments"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Tue, 06 Feb 2024 09:15:09 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.2.1",
+      "version": "0.2.1",
+      "comments": {
+        "none": [
+          {
+            "author": "bernardo.sunderhus@gmail.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "e1afa1694054d776bc4c3cb79a5f21754711c22c",
+            "comment": "chore: nx migrate to v17.3"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 31 Jan 2024 14:50:03 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.2.1",
+      "version": "0.2.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "bernardo.sunderhus@gmail.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "c61a804c8144ecb7e3eb1522bae2b829a46e29cb",
+            "comment": "chore: bumps @fluentui/react-utilities to 9.16.0"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 19 Jan 2024 08:53:32 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.2.0",
+      "version": "0.2.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "jirivyhnalek@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "ea437c5331cf37ae6b867ca35d1c6ae3b53fcba1",
+            "comment": "Add proper Readme file"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Wed, 17 Jan 2024 11:24:54 GMT",
+      "tag": "@fluentui-contrib/react-resize-handle_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "jirivyhnalek@microsoft.com",
+            "package": "@fluentui-contrib/react-resize-handle",
+            "commit": "23fe563d4a655396235ff0506ce28807ae3918fb",
+            "comment": "Introduce react-resize-handle"
+          }
+        ]
+      }
+    }
+  ]
+}

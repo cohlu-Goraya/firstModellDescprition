@@ -1,0 +1,28 @@
+{
+  "name": "@fluentui-contrib/nx-plugin",
+  "private": true,
+  "version": "0.0.1",
+  "type": "commonjs",
+  "generators": "./generators.json",
+  "executors": "./executors.json",
+  "dependencies": {
+    "@nx/devkit": "^22",
+    "@nx/js": "^22",
+    "@nx/playwright": "^22",
+    "semver": "^7.5.2",
+    "tslib": "^2.3.0"
+  },
+  "peerDependencies": {
+    "@playwright/experimental-ct-react": "^1.56.1",
+    "@playwright/experimental-ct-react17": "^1.56.1",
+    "nx": "^22"
+  },
+  "peerDependenciesMeta": {
+    "@playwright/experimental-ct-react": {
+      "optional": true
+    },
+    "@playwright/experimental-ct-react17": {
+      "optional": true
+    }
+  }
+}

@@ -1,0 +1,61 @@
+# Change Log - @fluentui-contrib/react-headless-provider
+
+This log was last generated on Tue, 18 Nov 2025 14:32:44 GMT and should not be manually modified.
+
+<!-- Start content -->
+
+## 1.0.6
+
+Tue, 18 Nov 2025 14:32:44 GMT
+
+### Patches
+
+- chore: bump react-dom versions to support React 19 (dmytrokirpa@microsoft.com)
+
+## 1.0.5
+
+Wed, 01 Oct 2025 08:00:02 GMT
+
+### Patches
+
+- chore: update peer dependencies for React and @types/react to support versions <20.0.0 (dmytrokirpa@microsoft.com)
+
+## 1.0.4
+
+Mon, 22 Sep 2025 16:02:24 GMT
+
+### Patches
+
+- feat: add react 19 support (dmytrokirpa@microsoft.com)
+
+## 1.0.3
+
+Thu, 10 Apr 2025 14:11:17 GMT
+
+### Patches
+
+- fix: add missing runtime @swc/helper dependency (hochelmartin@gmail.com)
+
+## 1.0.2
+
+Wed, 31 Jan 2024 14:50:03 GMT
+
+### Patches
+
+- fix: apply public api expansion autofix on packages violating this rule (hochelmartin@gmail.com)
+
+## 1.0.1
+
+Fri, 08 Dec 2023 14:05:58 GMT
+
+### Patches
+
+- fix: use functions required by JSX pragma (olfedias@microsoft.com)
+
+## 1.0.0
+
+Wed, 25 Oct 2023 09:11:36 GMT
+
+### Major changes
+
+- chore: publish @fluentui-contrib/react-headless-provider (olfedias@microsoft.com)

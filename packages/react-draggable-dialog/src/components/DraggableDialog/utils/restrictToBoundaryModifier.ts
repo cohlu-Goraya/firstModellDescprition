@@ -1,0 +1,78 @@
+import { ClientRect, Modifier } from '@dnd-kit/core';
+import { restrictToWindowEdges as restrictToEdges } from '@dnd-kit/modifiers';
+
+import {
+  DraggableDialogProps,
+  DraggableDialogMarginViewport,
+} from '../DraggableDialog.types';
+
+type RestrictToBoundaryModifierOptions = {
+  margin: Required<DraggableDialogMarginViewport>;
+} & Pick<DraggableDialogProps, 'boundary'>;
+
+type RestrictToBoundaryModifier = (
+  options: RestrictToBoundaryModifierOptions
+) => Modifier;
+
+const getRectWithMargin = (
+  rect: ClientRect,
+  margin: Required<DraggableDialogMarginViewport>
+): ClientRect => {
+  // Return early if no margins are applied for better performance
+  if (
+    margin.start === 0 &&
+    margin.end === 0 &&
+    margin.top === 0 &&
+    margin.bottom === 0
+  ) {
+    return rect;
+  }
+
+  return {
+    width: rect.width - margin.start - margin.end,
+    height: rect.height - margin.top - margin.bottom,
+    top: rect.top + margin.top,
+    right: rect.right + margin.end,
+    bottom: rect.bottom + margin.bottom,
+    left: rect.left + margin.start,
+  };
+};
+
+export const restrictToBoundaryModifier: RestrictToBoundaryModifier =
+  ({ margin, boundary }) =>
+  ({ windowRect, containerNodeRect, transform, ...modifier }) => {
+    if (!boundary) {
+      return transform;
+    }
+
+    if (boundary === 'viewport' && windowRect) {
+      return restrictToEdges({
+        ...modifier,
+        containerNodeRect,
+        transform,
+        windowRect: getRectWithMargin(windowRect, margin),
+      });
+    }
+
+    const boundaryEl = (boundary as React.RefObject<HTMLElement>).current;
+
+    if (!boundaryEl) {
+      return transform;
+    }
+
+    const virtualRect = {
+      width: boundaryEl.offsetWidth,
+      height: boundaryEl.offsetHeight,
+      top: boundaryEl.offsetTop,
+      right: boundaryEl.offsetLeft + boundaryEl.offsetWidth,
+      bottom: boundaryEl.offsetTop + boundaryEl.offsetHeight,
+      left: boundaryEl.offsetLeft,
+    };
+
+    return restrictToEdges({
+      ...modifier,
+      transform,
+      containerNodeRect,
+      windowRect: getRectWithMargin(virtualRect, margin),
+    });
+  };
