@@ -12137,7 +12137,7 @@ __metadata:
     prettier: "npm:^2.6.2"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
-    react-frame-component: "npm:^5.2.6"
+    react-frame-component: "npm:^5.3.2"
     react-shadow: "npm:^20.6.0"
     react-virtualized-auto-sizer: "npm:^1.0.26"
     react-window: "npm:^1.8.10"
@@ -17740,14 +17740,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-frame-component@npm:^5.2.6":
-  version: 5.2.6
-  resolution: "react-frame-component@npm:5.2.6"
+"react-frame-component@npm:^5.3.2":
+  version: 5.3.2
+  resolution: "react-frame-component@npm:5.3.2"
   peerDependencies:
-    prop-types: ^15.5.9
-    react: ">= 16.3"
-    react-dom: ">= 16.3"
-  checksum: 10c0/bb7453add14732066e1136fa865721a9b75c52d096cf03b3a419b7f87770fbe220a601b1ecd1c097c737a6371ab9f72ad5af3579cbf9b5a61943562b1965da0f
+    prop-types: ^15.8.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    react: ">= 16.8 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+    react-dom: ">= 16.8 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+  checksum: 10c0/c158117f832c82ee4e17584b1a8a90ac2080d8fdf8bf9708c1fea5dc38052763e71f378cc09e1e82b8cf67715d9933dde64c011cf7331d2edc33b3383f711206
   languageName: node
   linkType: hard
 
